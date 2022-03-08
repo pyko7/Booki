@@ -1,0 +1,1323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    width: 100%;
+}
+
+/*******************HEADER****************/
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#main-logo{
+    width: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.nav-elements{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#hosting-item{
+    color: #0065FC;
+}
+/*******************************************/
+
+/****************FORM & FILTERS SECTION*************/
+.form-filter-section{
+    margin: 30px auto;
+}
+
+::-moz-placeholder{ /*black font for placeholder on moz*/
+    color: #000;
+    opacity: 1;
+}
+/***************************************/
+
+/****************SEARCH CITY FORM*************/
+form{
+    position: relative;
+    height: 50px;
+}
+
+label{ /*icon container*/
+    width: 50px;
+    height: 100%;
+    background: #F2F2F2;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.fa-map-marker-alt{ /*map marker icon*/
+    font-size: 20px;
+}
+
+input[type=text]{
+    height: 50px; /*size in px because position absolute*/
+    left: 50px; /*icon width 50px*/
+    font-size: 18px;
+    position: absolute;
+    border: 1px solid #F2F2F2;
+    padding-left: 15px; /*text isnt stick to border*/
+    font-weight: bold;
+    color: #000;
+    outline: inherit; /*remove black border*/
+}
+
+input[type=text]::placeholder{
+    font-weight: bold;
+    color: #000;
+}
+
+#searchBtn{
+    height: 100%;
+    color: #fff;
+    background: #0065FC;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+}
+/***************************************/
+
+/****************FILTERS*************/
+.filter-container{
+    margin-top: 30px;
+    display: flex;
+}
+
+.filter-container p{ /*"filtre" title*/
+    font-weight: 700;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+}
+
+
+.filter-buttons{ /*each filter*/
+    width: auto;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space:nowrap ; /*remove wrap in last button*/
+    cursor: pointer;
+}
+
+.filter-icons{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    color: #0065FC;
+    background: #DEEBFF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.filter-buttons:hover{
+    color: #0065FC;
+    background: #F2F2F2;
+}
+
+/*******************************************/
+
+/*********INFORMATION LINE**********/
+#information{
+    display: flex;
+    align-items: center;
+}
+
+.fa-info{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding:5px 10px; /*circle around i*/
+}
+/*******************************************/
+
+/*********************HOSTING POPULAR SECTION*******************/
+.hosting-popular-container{
+    display: flex;
+    margin: 30px auto;
+}
+
+.card-section-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/***********HOSTING CARD TEMPLATE**********/
+.hosting-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.hosting-card-container{ /*container for all cards*/
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;/*same height as popular container*/
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 1px 1px 6px #cccccc;
+}
+
+.card-image{ /*card thumbnail*/
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card-title{ /*name of hosting*/
+    font-weight: 700;
+}
+
+.card-title:hover{ /*name of hosting*/
+    text-decoration: underline;
+}
+
+.card:hover{
+    background:#DEEBFF;
+}
+
+.card-description{
+    width: 95%;
+}
+
+.blue-star{
+    color: #0065FC;
+}
+
+.grey-star{
+    color: #F2F2F2;
+}
+
+.show-more:hover{
+    text-decoration: underline;
+}
+/**********************************************/
+
+/***********MOST POPULAR SECTION**********/
+.most-popular{ /*most popular section on right on window*/
+    padding: 50px 30px 20px 30px;
+    background: #F2F2F2;
+}
+
+.popular-title{ /*most popular title*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-card-container{ /*cards container to keep them in columns*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-card a{ /*card for most popular section*/
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px #cccccc;
+}
+
+.popular-card a:hover{ /*card for most popular section*/
+    background: #DEEBFF;
+}
+
+
+.popular-img{ /*most popular thumbnail*/
+    display: block;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.popular-description{ /*name price rating hosting*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*******************************************/
+
+/***********ACTIVITIES SECTION**********/
+.activities-section{
+    width: 100%;
+    margin: 60px auto;
+}
+
+.activities-container{ /*contains all activities cards*/
+    display: flex;
+    justify-content: space-evenly; /*same space around every colums*/
+}
+
+.column{ /*contains activities cards*/
+    max-height: 570px;
+    display: flex;
+    justify-content: space-between; /*space between differents activities*/
+    flex-direction: column;
+}
+
+.title-container{
+    width: 100%;
+    height: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.activity-container a:hover{
+    background: #F2F2F2;
+}
+/*******************************************/
+
+/***********FOOTER**********/
+footer{
+    width: 100%;
+    background: #F2F2F2;
+    display: flex;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.footer-item:hover{
+    text-decoration: underline;
+}
+
+/*******************************************/
+
+/*__________________________________________/
+/                                           / 
+/                 MEDIA QUERIES             / 
+/__________________________________________*/
+
+
+
+
+
+
+@media all and (min-width: 992px) /*desktop media query*/
+{
+    
+/*******************DESKTOP HEADER****************/
+    header{
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    #main-logo{ /*a tag starts from the left side of page*/
+        width: 35%;
+        margin-left: 45px;
+    }
+
+    nav{
+        width: 300px;
+        margin-right: 40px;
+    }
+
+    .nav-elements{
+        border-top: 2px solid transparent; /*avoid elements moving down when hovering*/
+        font-size: 20px;
+    }
+
+    #hosting-item{
+        border-top: 2px solid #0065FC;
+    }
+
+    .nav-elements:hover{
+        color: #0065FC;
+        border-top: 2px solid #0065FC;
+    }
+/***************************************/
+/****************DESKTOP FORM & FILTERS SECTION*************/
+    .form-filter-section{
+        width: 95%;
+    }
+
+    #description{
+        font-size: 18px;
+    }
+
+/***************************************/
+/****************DESKTOP SEARCH CITY FORM*************/
+    form{
+        width: 450px;
+        margin-top: 20px;
+    }
+
+    label{ /*icon container*/
+        border-radius: 10px 0 0 10px;
+    }
+    
+    input[type=text]{
+        width: 280px;
+        font-size: 20px;
+    }
+
+    #searchBtn{
+        width: 125px;
+        border-radius: 0 10px 10px 0;
+        font-size: 18px;
+    }
+
+    #searchBtn .fa-search{ /*hide icon on desktop view*/
+        display: none;
+    }
+    #searchBtn span.search{ /*show "rechercher" on desktop view*/
+        display:inline-block;
+    }
+/***************************************/
+
+/****************DESKTOP FILTERS*************/
+    .filter-container{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-title{
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .filter-container p{ /*"filtre" title*/
+        font-size: 20px;
+        margin-right: 45px;
+    }
+
+    .filter-buttons{ /*each filter*/
+        margin-right: 45px;
+        padding: 20px 25px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .filter-icons{
+        margin-left: -26px; /*put icon on left side of button*/
+        padding-top: 15px;
+    }
+/*******************************************/
+
+/*********DESKTOP INFORMATION LINE**********/
+    #information{
+        margin-top: 30px;
+    }
+/*******************************************/
+
+/*********************DESKTOP MAIN SECTION*******************/
+    .hosting-popular-container{
+        width: 95%;
+        justify-content: space-between;
+    }
+/***********DESKTOP HOSTING CARD TEMPLATE**********/
+    .hosting-section{
+        max-width: 64%;
+        background: #F2F2F2;
+        border-radius: 30px;
+        padding: 50px 5px 20px 5px;
+    }
+
+    #city-hosting{
+        margin-left: 35px;
+    }
+
+    .card{
+        width: 320px;
+        max-height: 270px;
+        padding: 6px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+    }
+
+    .card-image{ /*card thumbnail*/
+        height: 150px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-title{ /*name of hosting*/
+        font-size: 20px;
+        margin: 10px 0 5px 0;
+    }
+
+    .card-description{
+        width: 95%;
+        margin: 0 0 10px 15px ;
+    }
+
+    .fa-star{
+        margin-top: 15px;
+    }
+
+    .show-more{
+        margin: 20px 0 20px 35px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+/**********************************************/
+
+/***********DESKTOP MOST POPULAR SECTION**********/
+    .most-popular{ /*most popular section on right on window*/
+        width: 32%;
+        padding: 50px 30px 20px 30px;
+        border-radius: 30px;
+        background: #F2F2F2;
+    }
+
+    .popular-title{ /*most popular title*/
+        margin: 0 15px;
+    }
+
+    .fa-chart-line{ /*most popular title icon*/
+        font-size: 26px;
+    }
+
+    .popular-card-container{ /*cards container to keep them in columns*/
+        width: 95%;
+    }
+
+    .popular-card a{ /*card for most popular section*/
+        height: 180px;
+        padding: 7px 15px 7px 7px;
+        margin: 20px 0;
+    }
+
+    .popular-img{
+        width: 40%;
+    }
+    
+    .popular-description{ /*name price rating hosting*/
+        width: 40%;
+        margin: 7px auto 15px 30px;
+    }
+
+    .popular-price{
+        font-size: 18px;
+    }
+/*******************************************/
+
+/***********DESKTOP ACTIVITIES SECTION**********/
+    .activities-section{
+        width: 100%;
+        margin: 70px auto;
+    }
+
+    .activities-container{ /*contains all activities cards*/
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+
+    #city-activities{
+        margin-left: 50px;
+    }
+
+    .column{ /*contains activities cards*/
+        width: 22%;
+    }
+            
+    .activity-container a{ /*contains img + title */
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-shadow: 1px 1px 6px #cccccc;
+        border-radius: 20px;
+    }
+    
+    .activity-image{ /*activity thumbnail - colum 1&3*/
+        width: 100%;
+        height: 500px;
+        display: block;
+        object-fit:cover;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .medium-activity-image{/*activity thumbnail - column 2 1st activity*/
+        width: 100%;
+        height: 250px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 33%;
+        border-radius: 20px 20px 0 0; 
+    }
+    
+    .small-activity-image{/*activity thumbnail - column 2 2nd activity*/
+        width: 100%;
+        height: 140px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 20%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .half-activity-image{/*activity thumbnail - column 4*/
+        width: 100%;
+        height: 190px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 20%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .title-container{
+        font-size: 20px;
+        padding: 30px 25px;
+    }
+/*******************************************/
+
+/***********DESKTOP FOOTER**********/
+    footer{
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .footer-list-container{
+        width: 25%;
+        margin: auto 60px;
+        justify-content: space-between;
+    }
+
+    .footer-list-container p{
+        font-size: 20px;
+    }
+
+    .footer-item{
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+/*******************************************/
+/*end of desktop media query*/
+}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 991px)    /* tablets media query*/
+{
+
+/*******************TABLETS HEADER****************/
+    header{
+        height: 140px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{ /*a tag starts from the left side of page*/
+        margin: 15px;
+        width: 20%;
+    }
+
+    #main-logo{
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 33px;
+    }
+
+    .nav-elements{
+        font-size: 24px;
+        padding: 15px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    #hosting-item{
+        border-bottom: 2px solid #0065FC;
+    }
+/***************************************/
+/****************TABLETS FORM & FILTERS SECTION*************/
+    .form-filter-section{
+        width: 95%;
+        margin-top: 60px;
+    }
+
+    #description{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+
+/****************TABLETS SEARCH CITY FORM*************/
+    form{
+        width: 500px;
+        height: 70px;
+        margin-top: 30px;
+    }
+
+    label{ /*icon container*/
+        border-radius: 15px 0 0 15px;
+    }
+    
+    input[type=text]{
+        width: 430px;
+        height: 70px;
+        font-size: 26px;
+    }
+
+    .fa-map-marker-alt{ /*map marker icon*/
+        font-size: 26px;
+    }
+
+    #searchBtn{
+        width: 60px;
+        border-radius: 15px;
+        font-size: 24px;
+    }
+
+    #searchBtn .fa-search{ /*show icon on tablets view*/
+        display: inline-block;
+    }
+    #searchBtn span.search{ /*hide "rechercher" on tablets view*/
+        display:none;
+    }
+
+/***************************************/
+
+/****************TABLETS FILTERS*************/
+    .filter-container{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .filter-container p{ /*"filtre" title*/
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .button-container{
+        width: 100%;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+
+    .filter-buttons{ /*each filter*/
+        margin: 0 40px 20px 0;
+        padding: 25px 40px;
+        font-size: 26px;
+    }
+
+    .filter-icons{
+        margin-left: -45px; /*put icon on left side of button*/
+        padding: 12px;
+        font-size: 22px;
+    }
+/*******************************************/
+
+/*********TABLETS INFORMATION LINE**********/
+    #information{
+        margin: 15px 5px;
+    }
+
+    #information p{
+    font-size: 24px;
+    }
+
+/*******************************************/
+
+/*********************TABLETS HOSTING POPULAR SECTION*******************/
+    .hosting-popular-container{
+        width: 100%;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+
+    /***********TABLETS HOSTING CARD TEMPLATE**********/
+    .hosting-section{ /*section with title and cards container*/
+        width: 100%;
+        padding: 50px 30px 20px 30px;
+    }
+
+    #city-hosting{ /*hosting section title*/
+        margin-left: 35px;
+        margin-bottom: 10px;
+        font-size: 33px;
+    }
+
+    .hosting-card-container{ /*container for all cards*/
+        width: 95%;
+        margin: 25px auto 0;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card{ /*card for hosting*/
+        width: 100%;
+        max-height: 400px;
+        padding: 7px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+    }
+
+    .card-image{ /*card thumbnail*/
+        height: 250px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-title{ /*name of hosting*/
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .card-description{
+        font-size: 20px;
+        margin: 15px 0 10px 15px ;
+    }
+
+    .popular-price{
+        font-size: 22px;
+    }
+
+    .fa-star{
+        margin-top: 15px;
+    }
+
+    .show-more{
+        margin-left: 35px;
+        font-size: 28px;
+    }
+
+/**********************************************/
+
+/***********TABLETS MOST POPULAR SECTION**********/
+    .most-popular{ /*most popular section on right on window*/
+        width: 100%;
+        padding: 50px 30px;
+        background: #F2F2F2;
+    }
+
+    .popular-title{ /*most popular title*/
+        margin: 0 0 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+    }
+
+    .fa-chart-line{ /*most popular title icon*/
+        font-size: 30px;
+    }
+
+    .popular-card-container{ /*cards container to keep them in columns*/
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-card a{ /*card for most popular section*/
+        width: 100%;
+        height: 230px;
+        padding: 7px 50px 7px 7px;
+        display: flex;
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 15px auto;
+        box-shadow: 1px 1px 6px #cccccc;
+    }
+
+    .popular-card a:hover{ /*card for most popular section*/
+        background: #DEEBFF;
+    }
+
+    .popular-img{ /*most popular thumbnail*/
+        display: block;
+        width: 45%;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .popular-description{ /*name price rating hosting*/
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .show-more{
+        margin-top: 35px;
+        font-size: 30px;
+    }
+/**************************************************/
+
+/***********TABLETS ACTIVITIES SECTION**********/
+    .activities-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .activities-container{ /*contains all activities cards*/
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #city-activities{
+        margin: 30px 0 55px 20px;
+    }
+
+    .column{ /*contains activities cards*/
+        width: 100%;
+        max-height: 700px;
+    }
+
+    .activity-container{ /*contains img + title */
+        width: 100%;
+        height: 300px;
+        box-shadow: 1px 1px 6px #cccccc;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .medium-activity-image{
+        width: 100%;
+        height: 220px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 45%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .mobile-activity-image{ /*activity thumbnail - colum 1&3*/
+        width: 100%;
+        height: 220px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 35%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .title-container{
+        font-size: 26px;
+        padding: 40px 0 10px 25px;
+    }
+
+    
+/*******************************************/
+
+/***********TABLETS FOOTER**********/
+    footer{
+        width: 100%;
+        padding: 25px;
+        background: #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .footer-title{
+        font-size: 24px;
+    }
+
+    .footer-list-container{
+        margin: 25px 90px 25px 0;
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+/*******************************************/
+
+/*end of tablet media query*/
+}
+
+
+
+
+@media all and (max-width: 767px)  /*mobile media query*/
+{
+
+/*******************MOBILE HEADER****************/ 
+    header{
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        margin: 10px;
+        width: 22%;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+
+    .nav-elements{
+        font-size: 16px;
+        padding: 10px 0;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    #hosting-item{
+        border-bottom: 2px solid #0065FC;
+    }
+/***************************************/
+
+/****************MOBILE FORM & FILTERS SECTION*************/
+    .form-filter-section{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .section-title{
+        width: 95%;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+/****************MOBILE SEARCH CITY FORM*************/
+    form{
+        width: 350px;
+        margin: 30px 0 20px 0;
+    }
+
+
+    label{ /*icon container*/
+        border-radius: 15px 0 0 15px;
+    }
+
+    input[type=text]{
+        width: 250px;
+    }
+
+    #searchBtn{
+        width: 50px;
+        border-radius: 15px;
+        font-size: 16px;
+        right: 5%;
+    }
+
+    #searchBtn .fa-search{ /*show icon on mobile view*/
+        display:inline-block;
+    }
+    #searchBtn span.search{ /*hide "rechercher" on mobile view*/
+        display: none;
+    }
+
+/***************************************/
+
+/****************MOBILE FILTERS*************/
+    .filter-container{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .filter-container p{ /*"filtre" title*/
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .button-container{
+        flex-wrap: wrap;
+    }
+
+    .filter-buttons{ /*each filter*/
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 2px 15px;
+        font-size: 16px;
+    }
+
+    .filter-icons{
+        margin-left: -25px; /*put icon on left side of button*/
+        margin-right: 10px;
+        font-size: 18px;
+    }
+/*******************************************/
+
+/*********MOBILE INFORMATION LINE**********/
+    #information{
+        margin-top: 15px;
+        align-items: flex-start;
+    }
+    
+    #information p{
+    font-size: 16px;
+    }
+
+    .fa-info{
+        font-size: 12px;
+    }
+/*******************************************/
+
+/*********************MOBILE HOSTING POPULAR SECTION*******************/
+    .hosting-popular-container{
+        width: 100%;
+        flex-direction:column-reverse;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    /***********MOBILE HOSTING CARD TEMPLATE**********/
+    .hosting-section{ /*section with title and cards container*/
+        width: 95%;
+    }
+
+    #city-hosting{ /*hosting section title*/
+        margin-top:40px;
+    }
+
+    .hosting-card-container{ /*container for all cards*/
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card{ /*card for hosting*/
+        width: 100%;
+        max-height: 250px;
+        padding: 5px;
+        margin: 7px 0;
+        border-radius: 25px;
+    }
+
+    .card-image{ /*card thumbnail*/
+        height: 110px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-title{ /*name of hosting*/
+        font-size: 18px;
+        margin: 10px 0 5px 0;
+    }
+
+    .card-description{
+        font-size: 16px;
+        margin: 0 0 5px 10px;
+    }
+
+    .fa-star{
+        font-size: 12px;
+        margin: 8px 0;
+    }
+
+    .show-more{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+/**********************************************/
+
+/***********MOBILE MOST POPULAR SECTION**********/
+    .most-popular{ /*most popular section on right on window*/
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .popular-title{ /*most popular title*/
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        padding: 0 20px 15px 20px;
+        font-size: 33px;
+    }
+
+    .fa-chart-line{ /*most popular title icon*/
+        font-size: 24px;
+    }
+
+    .popular-card-container{ /*cards container to keep them in columns*/
+        width: 95%;
+    }
+
+    .popular-card a{ /*card for most popular section*/
+        height: 150px;
+        padding: 5px;
+        padding-right: 35px;
+        margin: 5px 0;
+    }
+
+    .popular-img{ /*most popular thumbnail*/
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .popular-description{ /*name price rating hosting*/
+        width: 70%;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .popular-price{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .popular-star{
+        font-size: 14px;
+    }
+
+    .show-more{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+/******************************************************/
+
+/***********MOBILE ACTIVITIES SECTION**********/
+    .activities-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .activities-container{ /*contains all activities cards*/
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #city-activities{
+        margin: 30px 0 20px 15px;
+    }
+
+    .column{ /*contains activities cards*/
+        width: 100%;
+    }
+
+    .activity-container{ /*contains img + title */
+        width: 100%;
+        height: 180px;
+        box-shadow: 1px 1px 6px #cccccc;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .medium-activity-image{
+        width: 100%;
+        height: 120px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 45%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .mobile-activity-image{ /*activity thumbnail for mobile*/
+        width: 100%;
+        height: 120px;
+        display: block;
+        object-fit:cover;
+        object-position: 50% 35%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .title-container{
+        font-size: 18px;
+        padding: 30px 0 10px 25px;
+    }
+/*******************************************/
+
+/***********MOBILE FOOTER**********/
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        padding-bottom: 10px;
+    }
+
+    .footer-list-container{
+        margin-bottom: 20px;
+    }
+
+    .footer-list-container p{
+        font-size: 18px;
+    }
+    .footer-item{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+/*******************************************/
+
+/*end of mobile media query*/
+}
