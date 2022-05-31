@@ -21,7 +21,7 @@ For this project, the objective is to integrate a mockup of a desktop-first webs
 
 ### Links
 
-- Live Site URL: [Booki](https://your-live-site-url.com)
+- Live Site URL: [Booki](https://pyko7.github.io/P2-Booki/) 
 
 ## My process
 
